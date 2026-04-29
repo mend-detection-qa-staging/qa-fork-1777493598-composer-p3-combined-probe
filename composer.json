@@ -1,0 +1,11 @@
+{
+    "name": "mend-detection-qa/composer-p3-combined-probe",
+    "description": "Combined P3 patterns: metapackage + OR constraints + stability flag",
+    "require": {
+        "sentry/sdk": "^4.0",
+        "monolog/monolog": "^2.0 || ^3.0",
+        "nesbot/carbon": "^2.0@beta"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
