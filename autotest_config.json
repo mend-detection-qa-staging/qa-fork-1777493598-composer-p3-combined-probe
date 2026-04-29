@@ -1,0 +1,24 @@
+{
+  "validate_scan_output": {
+    "security_scan_report_conclusion": "success",
+    "total_libs_scanned": {
+      "operator": "gte",
+      "value": 13
+    }
+  },
+  "validate_dependency_tree": {
+    "detect_package_manager": true,
+    "expected_package_managers": {
+      "operator": "contains",
+      "value": ["php"]
+    },
+    "direct_dependencies_names_list": {
+      "operator": "eq",
+      "value": ["sentry/sdk", "monolog/monolog", "nesbot/carbon"]
+    },
+    "expected_total_dependencies_number": {
+      "operator": "gte",
+      "value": 12
+    }
+  }
+}
